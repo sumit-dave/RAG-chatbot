@@ -11,3 +11,8 @@ def rag_chatbot(query):
     return response, sources
 
 
+## Retrieves context chunks
+
+## Passes to LLM
+
+## Returns the final answer

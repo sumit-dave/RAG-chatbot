@@ -34,11 +34,11 @@ if user_input:
             msg.markdown(partial)
             time.sleep(0.02)
 
+        # Expands to show source chunks
         with st.expander("🔍 Sources"):
             for i, s in enumerate(sources):
                 st.markdown(f"**Chunk {i+1}:** {s}")
 
     st.session_state.messages.append({"user": user_input, "bot": response})
 
-    #streamlit run app.py 
-    #it's done
+

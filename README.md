@@ -1,3 +1,8 @@
+Demo Video: https://drive.google.com/file/d/1fok2YForUe-rAQYnVL0jpOurSNvYaR-c/view?usp=drive_link
+
+Git Hub link: https://github.com/sumit-dave/RAG-chatbot.git
+
+
 💬 RAG Chatbot with Local LLM (Mistral via Ollama)
 
 A Retrieval-Augmented Generation chatbot designed to answer questions based on the content of a provided AI training document. This chatbot integrates semantic search with a local language model to generate grounded, real-time responses within a Streamlit interface.
@@ -19,6 +24,17 @@ A Retrieval-Augmented Generation chatbot designed to answer questions based on t
 ✅ Expandable source chunk display for traceability
 
 🧠 RAG Pipeline Overview
+
+PDF → Text → Chunks → Embeddings → FAISS
+
+User Query
+    ↓
+Retriever → Top Chunks → Prompt
+    ↓
+      LLM (Mistral) → Answer
+         ↓
+       Streamlit UI (Chatbot)
+
 
 1. Chunking
 
@@ -65,7 +81,7 @@ Output streamed via Streamlit st.empty()
 
 Step 1: Setup
 
-git clone https://github.com/YOUR_USERNAME/rag-chatbot
+git clone: https://github.com/sumit-dave/RAG-chatbot.git
 cd rag-chatbot
 python -m venv .venv
 source .venv/Scripts/activate  # For Git Bash / Windows
@@ -83,59 +99,6 @@ Step 4: Run Streamlit App
 
 streamlit run app.py
 
-📸 Demo Video
-
-🎥 Watch the full demo (YouTube/Drive)
-
-🧪 Includes:
-
-Overview of setup
-
-Live queries with streaming
-
-Working + failure query examples
-
-UI walkthrough and code folders
-
-❓ Sample Queries
-
-Query
-
-Response Type
-
-What are the deliverables for this project?
-
-✅ Success
-
-Which LLM is being used in the chatbot?
-
-✅ Success
-
-Who is the CEO of OpenAI?
-
-⚠️ Graceful fail
-
-Explain supervised learning.
-
-⚠️ Graceful fail
-
-What is the role of the retriever?
-
-✅ Success
-
-📁 Folder Structure
-
-├── app.py                  # Streamlit interface
-├── requirements.txt        # All dependencies
-├── README.md
-├── scripts/
-│   └── build_faiss_index.py
-├── chunks/                 # Text chunks JSON
-├── vectordb/               # FAISS index & metadata
-├── src/
-│   ├── generator.py
-│   ├── retriever.py
-│   └── rag_pipline.py
 
 ⚠️ Known Limitations
 
