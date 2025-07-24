@@ -1,4 +1,5 @@
-# src/generator.py
+# Creating an Answer Using the Retrieved Chunks
+
 import requests
 
 def generate_answer(query, context_chunks):

@@ -1,4 +1,5 @@
-# src/retriever.py
+# To find most relevant chunks
+
 import os
 import faiss
 import json

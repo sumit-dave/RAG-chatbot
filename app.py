@@ -7,6 +7,7 @@ from src.rag_pipeline import rag_chatbot
 st.set_page_config(page_title="💬 RAG Chatbot")
 st.title("💬 RAG Chatbot")
 
+# Built in sesssion Memory.
 if "messages" not in st.session_state:
     st.session_state.messages = []
 

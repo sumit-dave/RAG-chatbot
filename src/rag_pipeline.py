@@ -1,4 +1,5 @@
-# src/rag_pipeline.py
+# Orchestrating Retrieval and Generation
+
 from src.retriever import semantic_search
 from src.generator import generate_answer
 
