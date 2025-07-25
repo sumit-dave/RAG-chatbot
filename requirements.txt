@@ -3,7 +3,5 @@ sentence-transformers
 faiss-cpu
 transformers
 torch
-langchain
 PyMuPDF
-accelerate
 requests
