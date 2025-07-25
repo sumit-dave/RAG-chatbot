@@ -1,4 +1,4 @@
-# Orchestrating Retrieval and Generation
+# Combining Retrieval and Generation
 
 from src.retriever import semantic_search
 from src.generator import generate_answer
